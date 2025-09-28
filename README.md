@@ -1,7 +1,7 @@
 # holdassist-for-asterisk
 iOS 26 and the iPhone 17 can do it, so can we in Asterisk / FreePBX
 
-When put on (endless) hold, transfer the call to 4653 (as in "HOLD") and hang up. The operator will hear "Press zero to connect" and your phone will ring.
+When put on (endless) hold by some 1st level support, transfer the call to 4653 (as in "HOLD") and hang up. The operator will hear "Press zero to connect" and your phone will ring.
 
 Two places in FreePBX GUI:
 1. Admin => Custom Destination with target 6453
