@@ -4,12 +4,12 @@ iOS 26 and the iPhone 17 can do it, so can we in Asterisk / FreePBX
 When put on (endless) hold by some 1st level support, just transfer the call to 4653 (as in "HOLD") and hang up. The operator will hear "Press zero to connect" and your phone will ring.
 
 Two places in FreePBX GUI:
-1. Admin => Custom Destination with target 6453
-2. Application => Misc Application with 6453 as Feature Code and the above as Custom Destination als Target.
+1. Admin => Custom Destination with Target "6453"
+2. Application => Misc Application with Feature Code "6453" and above Custom Destination as Target.
 
 Two places in the file system
-1. Put audio for "Press zero..." in /var/lib/asterisk/sounds/custom (see below)
-2. Put the following into /etc/asterisk/extensions_custom.conf
+1. Put audio for "Press zero..." (see below) in /var/lib/asterisk/sounds/custom
+2. Put this into /etc/asterisk/extensions_custom.conf:
 
 ```ini
 [macro-dialout-trunk-predial-hook]
