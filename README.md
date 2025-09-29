@@ -26,7 +26,7 @@ exten => s,1,Answer()
 
 ; User presses 0 → reconnect
 exten => 0,1,NoOp(Caller pressed 0, dialing original caller)
-    same => n,Dial(PJSIP/${ORIGINAL_CALLER})
+    same => n,Dial(Local/${ORIGINAL_CALLER}@from-internal)
     same => n,NoOp(Back from dial, returning to prompt)
     same => n,Goto(s,2)
 
